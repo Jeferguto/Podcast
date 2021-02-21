@@ -1,3 +1,11 @@
+* {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
 .footerContainer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +21,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 5%;
+  color: #060A24;
+  font-family: "IBM Plex Mono";
 }
 
 .footerContainer .redes {
@@ -28,20 +38,8 @@
           justify-content: space-evenly;
 }
 
-* {
-  text-align: justify;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  scroll-behavior: smooth;
-}
-
-button {
-  background-color: #00F3BB;
-  width: 85%;
-  height: 48px;
-  text-align: center;
-  margin-top: 10%;
+.footerContainer .redes i {
+  color: #060A24;
 }
 
 /*episodios*/
@@ -53,7 +51,8 @@ button {
 }
 
 .epContainer h2 {
-  color: #ffffff;
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans";
 }
 
 .eppodcasts {
@@ -97,13 +96,21 @@ button {
 .noContainer .text_we {
   text-align: justify;
   margin-top: -20vh;
-  color: #060A24;
   padding: 5%;
+  color: #060A24;
+  font-family: "IBM Plex Mono";
+}
+
+.noContainer .text_we h2 {
+  color: #060A24;
+  font-family: "IBM Plex Sans";
 }
 
 /*entrevistas*/
 .interContainer h2 {
   padding: 5%;
+  color: #060A24;
+  font-family: "IBM Plex Sans";
 }
 
 .gallery img {
@@ -114,6 +121,8 @@ button {
 /*topicos*/
 .topTitule {
   padding: 5%;
+  color: #060A24;
+  font-family: "IBM Plex Sans";
 }
 
 .topContainer {
@@ -144,6 +153,9 @@ button {
 
 .text {
   margin-top: 10%;
+  color: #060A24;
+  font-family: "IBM Plex Sans";
+  font-weight: 900;
 }
 
 /*novedades*/
@@ -166,5 +178,108 @@ button {
 
 .novelties p {
   text-align: center;
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans";
+}
+
+button {
+  background-color: #00F3BB;
+  height: 48px;
+  width: 288px;
+  text-align: center;
+  margin-top: 10%;
+  color: #060A24;
+  font-family: "IBM Plex Mono";
+}
+
+@media (min-width: 1024px) {
+  /*episodios*/
+  .epContainer {
+    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    padding: 10% 5% 18% 5%;
+  }
+  .epContainer h2 {
+    margin-left: 7%;
+  }
+  .epContainer .eppodcasts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6%;
+    grid-row-gap: 15%;
+  }
+  .epContainer iframe {
+    width: 100%;
+  }
+  /*nosotros*/
+  .noContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: -10%;
+  }
+  .noContainer .aboutUsImg .phone {
+    margin-left: 8.9%;
+    z-index: 0;
+    width: 457.6px;
+    height: 660px;
+  }
+  .noContainer .text_we {
+    margin: 5%;
+    margin-right: 11%;
+    color: #060a24;
+    padding: 5%;
+  }
+  /*entrevistas*/
+  .interContainer h2 {
+    margin-left: 7%;
+  }
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  /*topicos*/
+  .topTitule {
+    margin-left: 7%;
+  }
+  .topContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /*novedades*/
+  .novelties p {
+    height: 13.2%;
+    -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+  }
+  /*footer*/
+  .footerContainer {
+    padding: 3%;
+    -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerContainer .copyright {
+    margin-bottom: 0%;
+    margin-left: 2%;
+  }
+  .footerContainer .redes {
+    width: 30%;
+    padding: 2%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

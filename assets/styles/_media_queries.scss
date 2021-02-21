@@ -1,0 +1,93 @@
+@media (min-width: 1024px) {
+    
+    /*episodios*/
+    .epContainer{
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        padding: 10% 5% 18% 5%;
+
+        h2{
+            margin-left: 7%;
+        }
+
+        .eppodcasts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 6%;
+        grid-row-gap: 15%;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    /*nosotros*/
+    .noContainer{
+        display: flex;
+        margin-bottom: -10%;
+
+        .aboutUsImg{        
+            .phone{
+                margin-left: 8.9%;
+                z-index: 0;
+                width: 457.6px;
+                height: 660px;
+            }
+        }
+
+        .text_we{
+            margin: 5%;
+            margin-right: 11%;
+            color: #060a24;
+            padding: 5%;
+        }
+    }
+
+    /*entrevistas*/
+    .interContainer{
+        h2{
+            margin-left: 7%;
+        }
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*topicos*/
+    .topTitule{
+        margin-left: 7%;
+    }
+
+    .topContainer{
+        display: flex;
+        flex-direction: row;    
+    }
+
+    /*novedades*/
+    .novelties{
+        p{
+            height: 13.2%;
+            clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+        }
+    }
+
+    /*footer*/
+    .footerContainer {
+        padding: 3%;
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+        display: flex;
+        justify-content: space-between;
+
+        .copyright{
+            margin-bottom: 0%;
+            margin-left: 2%;
+        }
+
+        .redes{
+            width: 30%;
+            padding: 2%;
+        }
+
+    }
+}
