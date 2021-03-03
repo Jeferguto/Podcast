@@ -1,3 +1,29 @@
+/*introduction*/
+.start{
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 6%;
+
+    h1{
+        text-align: start;
+        color: $base-color;
+        font-family: $main-words;
+        font-size: 2.6rem;
+        margin-bottom: 5%;
+    }
+
+    p{
+        color: $base-color;
+        font-family: $second-words;
+        font-size: 0.8rem;
+    }
+
+    .word{
+        text-decoration: line-through;
+    }
+}
+
 /*episodios*/
 .epContainer
 {
@@ -6,8 +32,11 @@
     background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
 
     h2{
+        text-align: start;
         color: $second-color;
         font-family: $main-words;
+        font-size: 2.6rem;
+        margin-bottom: 5%;
     }
 }
 
@@ -46,10 +75,13 @@
         padding: 5%;
         color: $base-color;
         font-family: $second-words;
+        font-size: 0.8rem;   
 
         h2{
+            text-align: start;
             color: $base-color;
             font-family: $main-words;
+            font-size: 2.6rem;
         }
     }
 }
@@ -58,9 +90,11 @@
 .interContainer
 {
     h2{
+        text-align: start;
         padding: 5%;
         color: $base-color;
         font-family: $main-words;
+        font-size: 2.6rem;
     }
 }
 
@@ -74,9 +108,11 @@
 
 /*topicos*/
 .topTitule{
+    text-align: start;
     padding: 5%;
     color: $base-color;
     font-family: $main-words;
+    font-size: 2.6rem;
 }
 
 .topContainer{
@@ -96,7 +132,12 @@
     margin-top: 10%;
     color: $base-color;
     font-family: $main-words;
+    font-size: 1.5rem;
     font-weight: 900;
+
+    p{
+        text-align: center;
+    }
 }
 
 /*novedades*/
@@ -112,10 +153,11 @@
         text-align: center;
         color: $second-color;
         font-family: $main-words;
+        font-size: 3.6rem;
     }
 }
 
-button{
+.switch{
     background-color: #00F3BB;
     height: 48px;
     width: 288px;
@@ -123,4 +165,5 @@ button{
     margin-top: 10%;
     color: $base-color;
     font-family: $second-words;
+    font-size: 1rem;
 }
