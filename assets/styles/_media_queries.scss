@@ -1,9 +1,38 @@
+@media (min-width: 500px) {
+    .about {
+      img {
+        transform: translate(15%, -25%);
+        z-index: 2;
+        width: 80%;
+      }
+    }
+  }
+
 @media (min-width: 1024px) {
+    /*introduccion*/
+    .start {
+        padding: 10% 17% 1% 11%;
+        text-align: start;
+        h1 {
+          font-size: 4rem; 
+          margin-bottom: 1%;      
+        }
+        p {
+          width: 39.2rem;
+          font-size: 1rem;
+        }
+        .dot {
+          color: #0000ec;
+        }
+        button{
+            margin-top: 6%;
+        }
+      }
     
     /*episodios*/
     .epContainer{
         clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-        padding: 10% 5% 18% 5%;
+        padding: 10% 5% 25% 5%;
 
         h2{
             margin-left: 7%;
@@ -26,9 +55,10 @@
         display: flex;
         margin-bottom: -10%;
 
-        .aboutUsImg{        
+        .aboutUsImg{
+            width: 40%;        
             .phone{
-                margin-left: 8.9%;
+                margin-left: 20%;
                 z-index: 0;
                 width: 457.6px;
                 height: 660px;
@@ -36,6 +66,7 @@
         }
 
         .text_we{
+            width: 32%;
             margin: 5%;
             margin-right: 11%;
             color: #060a24;
@@ -60,16 +91,16 @@
     }
 
     .topContainer{
-        display: flex;
-        flex-direction: row;    
+        padding: 0% 15.3% 0% 15.3%;
+        flex-direction: row;
     }
 
     /*novedades*/
     .novelties{
-        p{
-            height: 13.2%;
-            clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
-        }
+        padding: 10%;
+        height: 13.2%;
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+
     }
 
     /*footer*/
