@@ -448,7 +448,7 @@
   .epContainer .eppodcasts {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr) 2;
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 6%;
     grid-row-gap: 15%;
@@ -486,7 +486,7 @@
   .gallery {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr) 3;
         grid-template-columns: repeat(3, 1fr);
   }
   /*topicos*/
